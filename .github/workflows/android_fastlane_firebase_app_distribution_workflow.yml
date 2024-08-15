@@ -36,5 +36,8 @@ jobs:
       env:
         FIREBASE_CLI_TOKEN: ${{ secrets.FIREBASE_CLI_TOKEN }}  # يستخدم رمز Firebase المخزن في أسرار GitHub
       run: |
-        bundle exec fastlane android My_app_quebets # يقوم بتشغيل الأمر fastlane android My_app_quebets
+        bundle exec fastlane android My_app_quebets
       working-directory: android  # يقوم بتشغيل Fastlane في مجلد android
+       # يقوم بتشغيل الأمر fastlane android My_app_quebets 
+       # هتديله نفس الاسم اللي انت مكريته ف fastfile 
+       # lane :My_app_quebets do 
