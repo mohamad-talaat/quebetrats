@@ -1,0 +1,38 @@
+name: Android Fastlane with Firebase App Distribution Workflow
+
+on:
+  push:
+    branches:
+      - master  # سيتم تشغيل هذا العمل عند الدفع إلى فرع master
+
+jobs:
+  distribute_to_firebase:
+    runs-on: ubuntu-latest  # ملهاش علاقه بالجهاز بتاعك .. قصدة الجيت اكشنز
+    steps:
+    - name: Checkout my repo code
+      uses: actions/checkout@v2  # يقوم بجلب الكود من المستودع
+
+    - name: Set up JDK 11
+      uses: actions/setup-java@v2
+      with:
+        java-version: '11'
+        distribution: 'temurin'  # يقوم بإعداد Java Development Kit
+
+    - name: Install Flutter
+      uses: subosito/flutter-action@v2
+      with:
+        channel: stable  # يقوم بتثبيت Flutter
+
+    - name: Setup Ruby
+      uses: ruby/setup-ruby@v1
+      with:
+        ruby-version: "3.3.4"
+        bundler-cache: true
+        working-directory: android  # يقوم بإعداد Ruby في مجلد android
+
+    - name: Build and Distribute App
+      env:
+        FIREBASE_CLI_TOKEN: ${{ secrets.FIREBASE_CLI_TOKEN }}  # يستخدم رمز Firebase المخزن في أسرار GitHub
+      run: |
+        bundle exec fastlane android firebase_distribution
+      working-directory: android  # يقوم بتشغيل Fastlane في مجلد android
