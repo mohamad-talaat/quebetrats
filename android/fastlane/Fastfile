@@ -1,0 +1,23 @@
+ 
+
+default_platform(:android)
+
+platform :android do
+  desc "Runs My First Application in fastline"
+  lane :My_app_quebets do  #change this My_app_quebets to any name you want 
+    sh "flutter clean"
+    sh "flutter build apk --release --no-tree-shake-icons"
+    firebase_app_distribution(
+      app: "1:477369730364:android:c478fad3adfc44bcda0a39",
+      firebase_cli_token: "1//09tWNh1TyKWEbCgYIARAAGAkSNwF-L9IrSDexjqLG-ehxATFVP-0wAunr-Tw5CGiPUCtkAx1ETaNpn92HhgXZxBxnAn2V-h-idzQ",
+      android_artifact_type: "APK",
+      android_artifact_path:"../build/app/outputs/flutter-apk/app-release.apk",
+      testers: "motalaat1610@gmail.com , thegoldust01013280650@gmail.com",
+      release_notes: "My App to Firebase dis. with Fastline to make deb. for testing automatically",
+      debug: true
+    )
+    
+  end
+end
+
+ 

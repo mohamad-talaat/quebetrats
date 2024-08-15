@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "477369730364",
+    "project_id": "fir-cli-dis",
+    "storage_bucket": "fir-cli-dis.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:477369730364:android:c478fad3adfc44bcda0a39",
+        "android_client_info": {
+          "package_name": "com.qubit.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBIi41nktpMqZ4nmQfCnz2FIkwSUw6zsnA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
