@@ -14,10 +14,10 @@ jobs:
       uses: actions/checkout@v3
        # يقوم بجلب الكود من المستودع
 
-    - name: Set up JDK 22
+    - name: Set up JDK 17
       uses: actions/setup-java@v3
       with:
-        java-version: '22'
+        java-version: '17'
         distribution: 'temurin'  # يقوم بإعداد Java Development Kit
 
     - name: Install Flutter
