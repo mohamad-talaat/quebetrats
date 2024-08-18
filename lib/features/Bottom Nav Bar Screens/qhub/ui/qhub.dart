@@ -3,7 +3,7 @@ import 'package:quebetrats/core/constant/color.dart';
 import 'package:quebetrats/features/Bottom%20Nav%20Bar%20Screens/qhub/ui/widgets/filter_search.dart';
 import 'package:quebetrats/features/Bottom%20Nav%20Bar%20Screens/qhub/ui/widgets/post.dart';
 import 'package:quebetrats/features/Bottom%20Nav%20Bar%20Screens/qhub/ui/widgets/qubit_bar.dart';
-import 'package:share_plus/share_plus.dart';
+// import 'package:share_plus/share_plus.dart';
 
 class QubitHubScreen extends StatelessWidget {
   const QubitHubScreen({super.key});
@@ -45,7 +45,7 @@ class QubitHubScreen extends StatelessWidget {
                 '7 months ago',
                 () {},
                 () {
-                      Share.share('تحقق من هذا المنشور الرائع: https://example.com/post');
+                      // Share.share('تحقق من هذا المنشور الرائع: https://example.com/post');
 
                 },
                 "assets/images/one.PNG"),
