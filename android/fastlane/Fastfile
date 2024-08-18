@@ -6,8 +6,7 @@ platform :android do
   desc "Runs My First Application in fastline"
   lane :My_app_quebets do  #change this My_app_quebets to any name you want 
     sh "flutter clean"
-  #  sh "flutter build apk --release --no-tree-shake-icons"
-    sh "flutter build apk --release "
+    sh "flutter build apk --release --no-tree-shake-icons"
     firebase_app_distribution(
       app: "1:477369730364:android:c478fad3adfc44bcda0a39",
      # firebase_cli_token: "1//09tWNh1TyKWEbCgYIARAAGAkSNwF-L9IrSDexjqLG-ehxATFVP-0wAunr-Tw5CGiPUCtkAx1ETaNpn92HhgXZxBxnAn2V-h-idzQ",
