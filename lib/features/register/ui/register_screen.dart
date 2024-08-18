@@ -1,7 +1,6 @@
 // ignore_for_file: unused_local_variable
 
 import 'package:quebetrats/core/constant/color.dart';
-import 'package:quebetrats/core/functions/alertexitapp.dart';
 import 'package:quebetrats/core/functions/validinput.dart';
 
 import 'package:flutter/material.dart';

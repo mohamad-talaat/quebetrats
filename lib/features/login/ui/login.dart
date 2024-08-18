@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:quebetrats/core/constant/app_styles.dart';
 import 'package:quebetrats/core/constant/color.dart';
-import 'package:quebetrats/core/functions/alertexitapp.dart';
 import 'package:quebetrats/core/functions/validinput.dart';
 import 'package:quebetrats/core/handlingdata/handlingdataview.dart';
 import 'package:quebetrats/features/login/logic/login_controller.dart';

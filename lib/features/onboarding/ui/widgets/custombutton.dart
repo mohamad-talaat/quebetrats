@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 import 'package:quebetrats/core/constant/app_styles.dart';
-import 'package:quebetrats/core/constant/color.dart';
 import 'package:quebetrats/features/onboarding/logic/onboarding_controller.dart';
 
 class CustomButtonOnBoarding extends GetView<OnboardingControllerImp> {

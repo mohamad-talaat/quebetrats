@@ -3,7 +3,7 @@ import 'package:quebetrats/core/constant/app_styles.dart';
 import 'package:simple_gradient_text/simple_gradient_text.dart';
 
 class MyBrandsScreen extends StatelessWidget {
-  const MyBrandsScreen({Key? key}) : super(key: key);
+  const MyBrandsScreen({super.key});
 
   @override
   Widget build(BuildContext context) {

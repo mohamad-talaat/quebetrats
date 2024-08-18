@@ -1,11 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:quebetrats/core/constant/app_styles.dart';
 import 'package:quebetrats/core/constant/color.dart';
 import 'package:quebetrats/features/Bottom%20Nav%20Bar%20Screens/qhub/ui/widgets/filter_search.dart';
 import 'package:quebetrats/features/Bottom%20Nav%20Bar%20Screens/qhub/ui/widgets/post.dart';
 import 'package:quebetrats/features/Bottom%20Nav%20Bar%20Screens/qhub/ui/widgets/qubit_bar.dart';
 import 'package:share_plus/share_plus.dart';
-import 'package:simple_gradient_text/simple_gradient_text.dart';
 
 class QubitHubScreen extends StatelessWidget {
   const QubitHubScreen({super.key});

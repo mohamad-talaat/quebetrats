@@ -14,7 +14,7 @@ Widget myRequestsForUsersLogin() {
           Expanded(
               child: insideCardInfo(
                   Colors.black, "Active Requests", 0, () {}, Colors.white)),
-          SizedBox(
+          const SizedBox(
             width: 5,
           ),
           Expanded(
@@ -27,7 +27,7 @@ Widget myRequestsForUsersLogin() {
 }
 
 Widget insideCardInfo(Color? color, String name, int number,
-    Function()? onPressed, Color? Textcolor) {
+    Function()? onPressed, Color? textcolor) {
   return Card(
     color: color,
     child: Column(
@@ -35,11 +35,11 @@ Widget insideCardInfo(Color? color, String name, int number,
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
         Padding(
-          padding: EdgeInsets.only(top: 5),
+          padding: const EdgeInsets.only(top: 5),
           child: Text(
             "  $name  ",
             style:
-                AppTextStyle.aBeeZeefont16boldblue.copyWith(color: Textcolor),
+                AppTextStyle.aBeeZeefont16boldblue.copyWith(color: textcolor),
           ),
         ),
         Row(

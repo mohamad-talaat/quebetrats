@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
  import 'package:quebetrats/core/constant/app_styles.dart';
   
@@ -56,7 +55,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
                         ...List.generate(
                           generalDataList.length,
                           (index) {
-                            return SettingsDefault(
+                            return settingsDefault(
                                 generalDataList[index]["icon"],
                                 generalDataList[index]["name"],
                                 generalDataList[index]["onPressed"]);
@@ -73,7 +72,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
                         ...List.generate(
                           infoDataList.length,
                           (index) {
-                            return SettingsDefault(
+                            return settingsDefault(
                                 infoDataList[index]["icon"],
                                 infoDataList[index]["name"],
                                 infoDataList[index]["onPressed"]);
@@ -90,7 +89,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
                         ...List.generate(
                           settingsDataList.length,
                           (index) {
-                            return SettingsDefault(
+                            return settingsDefault(
                                 settingsDataList[index]["icon"],
                                 settingsDataList[index]["name"],
                                 settingsDataList[index]["onPressed"]);
@@ -148,7 +147,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
     },
   ];
 
-  Widget SettingsDefault(
+  Widget settingsDefault(
       IconData icon, String title, VoidCallback onPressedForArrowButton) {
     return Padding(
       padding: const EdgeInsets.only(bottom: 10),

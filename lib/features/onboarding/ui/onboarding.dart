@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:quebetrats/core/constant/color.dart';
 import 'package:quebetrats/features/onboarding/ui/widgets/custombutton.dart';
 import 'package:quebetrats/features/onboarding/ui/widgets/dotcontroller.dart';

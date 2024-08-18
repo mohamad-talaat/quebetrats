@@ -51,12 +51,14 @@ kotlinOptions {
 
     buildTypes {
         release {
-            // TODO: Add your own signing config for the release build.
+                 // TODO: Add your own signing config for the release build.
             // Signing with the debug keys for now, so `flutter run --release` works.
             signingConfig = signingConfigs.debug
-        } dependencies {
-        classpath 'com.android.tools.build:gradle:4.1.0' // Use a version that supports Java 8
-    }
+        } 
+        
+    //     dependencies {
+    //     classpath 'com.android.tools.build:gradle:4.1.0'  
+    // }
     }
 }
 

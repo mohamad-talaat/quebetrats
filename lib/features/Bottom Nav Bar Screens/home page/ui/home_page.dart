@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:quebetrats/core/constant/app_styles.dart';
 import 'package:quebetrats/features/Bottom%20Nav%20Bar%20Screens/home%20page/ui/widgets/add_new_brand.dart';
-import 'package:quebetrats/features/Bottom%20Nav%20Bar%20Screens/home%20page/ui/widgets/build_features.dart';
+ import 'package:quebetrats/features/Bottom%20Nav%20Bar%20Screens/home%20page/ui/widgets/build_features.dart';
 import 'package:quebetrats/features/Bottom%20Nav%20Bar%20Screens/home%20page/ui/widgets/build_qubit.dart';
 import 'package:quebetrats/features/Bottom%20Nav%20Bar%20Screens/home%20page/ui/widgets/business_problem.dart';
 import 'package:quebetrats/features/Bottom%20Nav%20Bar%20Screens/home%20page/ui/widgets/discover_service.dart';
@@ -38,7 +38,7 @@ class HomePage extends StatelessWidget {
             SizedBox(height: 8.h),
             myRequestsForUsersLogin(),
             SizedBox(height: 8.h),
-            AddNewBrand("Add New Brand", () {}),
+            addNewBrand("Add New Brand", () {}),
             SizedBox(height: 16.h),
             buildQubitHub(),
             SizedBox(height: 8.h),

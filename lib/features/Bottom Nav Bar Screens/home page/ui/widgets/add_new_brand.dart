@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:quebetrats/core/constant/app_styles.dart';
 
-Widget AddNewBrand(String add, onPressed) {
+Widget addNewBrand(String add, onPressed) {
   return Column(
     crossAxisAlignment: CrossAxisAlignment.start,
     children: [

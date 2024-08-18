@@ -63,6 +63,6 @@ class DefaultFirebaseOptions {
     messagingSenderId: '477369730364',
     projectId: 'fir-cli-dis',
     storageBucket: 'fir-cli-dis.appspot.com',
-    iosBundleId: 'com.example.quebetrats',
+    iosBundleId: 'com.qubit.app',
   );
 }
