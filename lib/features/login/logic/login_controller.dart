@@ -1,4 +1,3 @@
- 
  import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:quebetrats/core/class/statusrequest.dart';
@@ -6,9 +5,9 @@ import 'package:quebetrats/core/pagescall/pagename.dart';
 import 'package:quebetrats/core/services/services.dart';
 
 abstract class LoginController extends GetxController {
-   goToRegister();
+  goToRegister();
   goToLogin();
-   goToAsAGhost();
+  goToAsAGhost();
 }
 
 class LoginControllerImp extends LoginController {
@@ -26,6 +25,12 @@ class LoginControllerImp extends LoginController {
   StatusRequest statusRequest = StatusRequest.none;
 
   MyServices myServices = Get.find();
+
+
+  login() async {
+    //   if (formstate.currentState!.validate()) {
+    //     statusRequest = StatusRequest.loading;
+  }
 
   // LoginData testLoginData = LoginData(Get.find());
   // @override
@@ -71,7 +76,7 @@ class LoginControllerImp extends LoginController {
   //     //   print("Not Valid");
   //   }
   // }
- 
+
   @override
   void onInit() {
     // FirebaseMessaging.instance.getToken().then((value) {
@@ -94,16 +99,14 @@ class LoginControllerImp extends LoginController {
   goToRegister() {
     Get.offNamed(PageName.register);
   }
- 
-
 
   @override
   goToLogin() {
-    Get.offNamed(PageName.login); //homePageAsGhost
-  }
-    @override
-  goToAsAGhost() {
-    Get.offNamed(PageName.homePage); //homePageAsGhost
+    Get.offNamed(PageName.bottomNavBar); //homePageAsGhost
   }
 
+  @override
+  goToAsAGhost() {
+    Get.offNamed(PageName.bottomNavBar); //homePageAsGhost
+  }
 }

@@ -9,6 +9,7 @@ class MyServices extends GetxService {
     sharedPreferences = await SharedPreferences.getInstance();
     return this;
   }
+  
 }
 
 initialServices() async {

@@ -75,17 +75,17 @@ class RegisterScreen extends StatelessWidget {
                           labeltext: "18".tr,
                           // mycontroller: ,
                         ),
-                        CustomTextFormAuth(
-                          isNumber: true,
-                          valid: (val) {
-                            return validInput(val!, 7, 11, "phone");
-                          },
-                          mycontroller: controller.phone,
-                          hinttext: "22".tr,
-                          iconData: Icons.phone_android_outlined,
-                          labeltext: "21".tr,
-                          // mycontroller: ,
-                        ),
+                        // CustomTextFormAuth(
+                        //   isNumber: true,
+                        //   valid: (val) {
+                        //     return validInput(val!, 7, 11, "phone");
+                        //   },
+                        //   mycontroller: controller.phone,
+                        //   hinttext: "22".tr,
+                        //   iconData: Icons.phone_android_outlined,
+                        //   labeltext: "21".tr,
+                        //   // mycontroller: ,
+                        // ),
                         // GetBuilder<SignUpControllerImp>(
                         //     builder: (controller) =>
                         CustomTextFormAuth(

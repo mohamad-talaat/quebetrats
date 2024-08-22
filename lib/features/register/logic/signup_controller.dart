@@ -1,4 +1,4 @@
-import 'package:quebetrats/core/pagescall/pagename.dart';
+ import 'package:quebetrats/core/pagescall/pagename.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:quebetrats/core/class/statusrequest.dart';
@@ -6,7 +6,7 @@ import 'package:quebetrats/core/class/statusrequest.dart';
 abstract class SignUpController extends GetxController {
   signUp();
   goToSignIn();
-   goToAsAGhost();
+  goToAsAGhost();
 }
 
 class SignUpControllerImp extends SignUpController {
@@ -14,8 +14,7 @@ class SignUpControllerImp extends SignUpController {
 
   late TextEditingController name;
   late TextEditingController email;
-  late TextEditingController phone;
-  late TextEditingController password;
+   late TextEditingController password;
   StatusRequest statusRequest = StatusRequest.none;
 
   bool isshowpassword = true;
@@ -24,6 +23,24 @@ class SignUpControllerImp extends SignUpController {
     isshowpassword = isshowpassword == true ? false : true;
     update();
   }
+
+//   signUp() {
+ //  try {
+//   final credential = await FirebaseAuth.instance.createUserWithEmailAndPassword(
+//     email: emailAddress,
+//     password: password,
+//   );
+// } on FirebaseAuthException catch (e) {
+//   if (e.code == 'weak-password') {
+//     print('The password provided is too weak.');
+//   } else if (e.code == 'email-already-in-use') {
+//     print('The account already exists for that email.');
+//   }
+// } catch (e) {
+//   print(e);
+// }
+
+//   }
 
   // SignupData testDataSignUp = SignupData(Get.find());
   // List data = [];
@@ -62,8 +79,7 @@ class SignUpControllerImp extends SignUpController {
   @override
   void onInit() {
     name = TextEditingController();
-    phone = TextEditingController();
-    email = TextEditingController();
+     email = TextEditingController();
     password = TextEditingController();
     super.onInit();
   }
@@ -72,8 +88,7 @@ class SignUpControllerImp extends SignUpController {
   void dispose() {
     name.dispose();
     email.dispose();
-    phone.dispose();
-    password.dispose();
+     password.dispose();
     super.dispose();
   }
 

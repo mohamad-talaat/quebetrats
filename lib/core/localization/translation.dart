@@ -15,7 +15,7 @@ class MyTranslation extends Translations {
           "9": "تسجيل الدخول",
           "10": "اهلا بك",
           "11":
-              "يمكنك تسجيل الدخول من خلال البريد وكلمة المرور او من خلال وسائل التواصل الاجتماعي",
+              "يمكنك تسجيل الدخول من خلال البريد وكلمة المرور ",
           "12": "ادخل البريد الالكتروني",
           "50": "استكشف الان كضيف",
           "13": "ادخل كلمة المرور",
@@ -75,7 +75,7 @@ class MyTranslation extends Translations {
           "22": "Enter Your Phone",
           "23": "Enter Your Username",
           "24":
-              "Sign Up With Your Email And Password OR Continue With Social Media",
+              "Sign Up With Your Email And Password ",
           "25": " have an account ? ",
           "26": "SignIn",
           "27": "Check Email",
